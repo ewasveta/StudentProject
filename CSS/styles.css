@@ -4,15 +4,18 @@ body    {
          text-align: center;
          font-family: Verdana;
         }
+body img{
+           width: 100%; height: 35%;
+        }
 header  {
          height: 8%; width: 100%;
          background-color:  rgb(102, 160, 254);
          color:white;
         }
 h5      {
-        padding-top: 0.2em;
-        float:left;
-        width: 25%;
+         padding-top: 0.2em;
+         float:left;
+         width: 25%;
         }  
 header div
         {
@@ -32,12 +35,13 @@ ul li   {
         }        
 a       {
          text-decoration: none;
-         font-size: 12px;         
-         padding-top: 2em; padding-bottom: 2em;
+         font-size: 0.75em;         
+         padding-top: 2em; padding-bottom: 1.5em;
          padding-left: 1em; padding-right: 1em;
          color:white;
         }
-a:hover {
+a:hover,
+a:active{
          background-color:white;
          color:black;
         }                        
@@ -123,8 +127,15 @@ button
         {
             width: 14em; height: 6em;
             font-size: 0.5em;
-            border:0;
+            border:1px solid  rgb(102, 160, 254);
+            color: grey;
+            background-color: white;            
         }
+button:last-child
+        {
+            background-color: black;
+            color: lightgray;
+        }        
 footer div summary
         {
             display: flex;
@@ -132,13 +143,59 @@ footer div summary
             justify-content:space-between;
             height: 7.6em;
         }
-footer div summary button
-        {
-            color: grey;
-            background-color: white;
-        }                    
-footer div summary button:last-child
-        {
-            background-color: black;
-            color: lightgray;
+article {
+            padding-bottom: 2em;    
+        }        
+h2      {
+            padding-top: 2em;;    
+            font-weight: lighter;
+            font-size: 1.3em;
         }
+pre,
+details {
+            color: rgba(0, 0, 0, 0.5);  
+        }
+figure  {
+            display:flex;
+            flex-direction: column; 
+            justify-content: space-between;        
+        }        
+figure div
+        {
+            height: 9.4em;    
+            display:flex;
+            justify-content: space-around;
+            padding-left: 1.5%; padding-right: 1.5%;
+            padding-top: 0.5em; padding-bottom: 0.5em;
+        }        
+figure div div
+        {
+            width: 20em;  height: 7em; 
+            color:white;
+            font-size: 0.78em;
+            padding-top: 4.5em; 
+            
+            background-color: rgba(0, 0, 0, 0.8);
+            background-image: url("../Images/Small/github1.jpg");
+            background-repeat: no-repeat;
+            background-size: 25% 40%; 
+            background-position: 50% 50%;   
+        }  
+figcaption
+        {
+           width: 100%;     
+           text-align: right;
+        }
+hr      {
+           border-style:double;
+           border-width: 1px;
+        } 
+details span 
+        {
+           display: flex; 
+           padding-left: 5em; padding-right: 5em;
+        }
+details span div
+        {
+                width: 50%;
+        }                                   
